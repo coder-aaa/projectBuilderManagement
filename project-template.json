@@ -1,0 +1,49 @@
+[
+  {
+    "template-name": "sass",
+    "structure": {
+      "directories": [
+        {
+          "name": "abstract",
+          "files": [
+            { "name": "_variables.scss" },
+            { "name": "_function.scss" },
+            { "name": "_mixin.scss" }
+          ]
+        },
+        {
+          "name": "base",
+          "files": [
+            { "name": "_animation.scss" },
+            { "name": "_base.scss" },
+            { "name": "_typography.scss" },
+            { "name": "_utils.scss" }
+          ]
+        },
+        { "name": "component", "files": null },
+        { "name": "layout", "files": null },
+        { "name": "pages", "files": [{ "name": "_home.scss" }] },
+        { "name": "utils", "files": null },
+        { "name": "vendors", "files": null }
+      ],
+      "root-files": [
+        {
+          "name": "main.scss",
+          "content": [
+            "@import './abstract/_variables.scss', './abstract/_function.scss', './abstract/_mixin.scss';\n",
+            "@import './base/_base.scss', './base/_typography.scss', './base/_utils.scss';\n",
+            "@import './pages/_home.scss';\n",
+            "@import './base/_animation.scss';\n"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "template-name": "web",
+    "structure": {
+      "directories": [{ "name": "css", "files": [{ "name": "styles.css" }] }],
+      "root-files": [{ "name": "index.html" }]
+    }
+  }
+]
